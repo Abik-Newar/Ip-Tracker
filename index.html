@@ -12,18 +12,23 @@
       href="./images/favicon-32x32.png"
     />
 
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
-     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
-     crossorigin=""/>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin=""
+    />
 
-     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
-     integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
-     crossorigin=""></script>
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+      crossorigin=""
+    ></script>
 
     <title>Frontend Mentor | IP Address Tracker</title>
 
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <section class="container">
@@ -34,47 +39,53 @@
         <div class="search-container">
           <form action="">
             <input
-            id="ipAddress"
-            class="search-box"
+              id="ipAddress"
+              class="search-box"
               type="text"
               placeholder="Search for any IP address or domain"
             />
             <div class="btnS" id="searchBtn">
-              <img class="search-btn" src="images/icon-arrow.svg" alt="Search" />
+              <img
+                class="search-btn"
+                src="images/icon-arrow.svg"
+                alt="Search"
+              />
             </div>
           </form>
         </div>
       </div>
 
       <div class="result-section">
-        <div class="ipAddress similar border-right" >
+        <div class="ipAddress similar border-right">
           <h6>IP ADDRESS</h6>
 
-          <h2>00000000000</h2>
+          <h2 id="realIp">XXXX</h2>
         </div>
 
-        <div class="location similar border-right" >
+        <div class="location similar border-right">
           <h6>Location</h6>
 
-          <h2>00000000000</h2>
+          <h2 id="realLocation">XXXX</h2>
         </div>
 
-        <div class="timezone similar border-right" >
+        <div class="timezone similar border-right">
           <h6>Timezone</h6>
 
-          <h2>UTC - <span class="time"></span></h2>
+          <h2>UTC <span class="time" id="realTimezone">-XXXX</span></h2>
         </div>
 
-        <div class="isp similar" >
+        <div class="isp similar">
           <h6>ISP</h6>
 
-          <h2>ABC</h2>
+          <h2 id="realIsp">XXXX</h2>
         </div>
       </div>
 
+      <div class="reset" id="resetBtn">
+        <h3>RESET</h3>
+      </div>
 
       <div id="map"></div>
-
     </section>
     <!-- add offset value dynamically using the API -->
 
@@ -87,6 +98,5 @@
 
     <script src="js/index.js"></script>
     <script src="js/map.js"></script>
-
   </body>
 </html>

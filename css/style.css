@@ -14,7 +14,22 @@
 }
 
 
-
+.reset{
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
+    font-family: Rubik, sans-serif;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 250px;
+    top: 85px;
+    cursor: pointer;
+    background-color: black;
+    color: #fff;
+}
 
 
 /* styling started here */
