@@ -39,6 +39,7 @@ searchBtn.onclick = function(){
 
   })
   .catch(error => {
+    alert(error);
     console.error('Error:', error);
   });
 
